@@ -1,5 +1,7 @@
 <launch>
 
+  <arg name="rviz_config" default="$(find buggy_moveit_config)/launch/moveit.rviz"/>
+
   <!-- specify the planning pipeline -->
   <arg name="pipeline" default="ompl" />
 
@@ -50,7 +52,7 @@
 
   <!-- Run Rviz and load the default config to see the state of the move_group node -->
   <include file="$(find buggy_moveit_config)/launch/moveit_rviz.launch">
-    <arg name="rviz_config" value="$(find buggy_moveit_config)/launch/moveit.rviz"/>
+    <arg name="rviz_config" value="$(arg rviz_config)"/>
     <arg name="debug" value="$(arg debug)"/>
   </include>
 
