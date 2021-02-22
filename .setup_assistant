@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: buggy_moveit_config
+    relative_path: config/buggy_scene.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/buggy_scene.srdf
+  CONFIG:
+    author_name: Felix von Drigalski
+    author_email: FvDrigalski@gmail.com
+    generated_timestamp: 1613967252
